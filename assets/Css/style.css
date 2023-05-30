@@ -73,7 +73,7 @@ input, button{outline: none;}
 
 @media screen and (max-width: 767px) {
     .admine{
-        top: 150px !important;
+        top: 130px !important;
     }
 }
 
