@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0px;
+}
+
+ul{padding: 0; margin: 0;}
+
+li{list-style: none;}
+
+a{text-decoration: none;}
+
+input, button{outline: none;}
+
+/* =====customization css start here===== */
+.main__body{
+    background-image: url(../image/BG/Neon_Car.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    /* overflow: hidden; */
+}
+.float__set img{
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+}
+.float__com{
+    grid-template-columns: 10fr 1fr;
+
+}
+.cmtNone{
+    display: none !important;
+}
+.cmtHeight{
+    height: unset !important;
+}
+
+
+/* === */
+.admine{
+    right: 0;
+    /* transform: translateX(330px);
+    transition: 0.3s ease-in-out; */
+}
+
+.admineOff{
+    transform: translateX(0);
+}
+
+.transform{
+    display: block !important;
+    /* transform: translateX(0); */
+}
+
+.admin__logs{
+    display: none ;
+}
+
+.admin__logs ul li img{
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+
+@media screen and (max-width: 767px) {
+    .admine{
+        top: 150px !important;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .admine{
+        flex-direction: column;
+    }
+
+    .admin__logs{
+        width: 300px;
+    }
+}
+/* === */
+
+/* === */
+.sidebar{
+    position: absolute;
+    left: 0;
+    height: 100%;
+    transform-origin: left;
+
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 768px) {
+    .sidebar{
+        transform: translateX(0);
+    }
+    
+    .sideOff{
+        transform: translateX(-100%);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .xOff{
+        transform: translateX(-100%);
+    }
+
+    .xOn{
+        transform: translateX(0);
+    }
+}
+
+/* .sidebar ul li{
+    border-bottom: 1px solid red;
+} */
+
+.sidebar ul li button{
+    padding: 18px 30px;
+    width: 100%;
+    text-align: start;
+
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.sidebar ul li button:hover{
+    color: #2357E1;
+}
+
+@media screen and (max-width: 991px) {
+    .sidebar{
+        overflow-y: scroll;
+    }
+}
+
+/* @media screen and (max-width: 767px) {
+
+    .xOpen{
+        transform: translateX(0) !important;
+    }
+
+    .xClose{
+        transform: translateX(-100%) !important;
+    }
+} */
+
+@media screen and (max-width: 424px) {
+    .sidebar{
+        width: 100% !important;
+    }
+}
+/* === */
+/* =====customization css end here===== */
